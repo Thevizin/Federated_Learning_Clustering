@@ -1,0 +1,145 @@
+[2024-08-29 20:49:38,465][flwr][INFO] - Starting Flower simulation, config: ServerConfig(num_rounds=10, round_timeout=None)
+[2024-08-29 20:49:40,805][flwr][INFO] - Flower VCE: Ray initialized with resources: {'object_store_memory': 3275011276.0, 'memory': 6550022555.0, 'CPU': 12.0, 'node:10.0.0.182': 1.0}
+[2024-08-29 20:49:40,806][flwr][INFO] - Initializing global parameters
+[2024-08-29 20:49:40,806][flwr][INFO] - Requesting initial parameters from one random client
+[2024-08-29 20:49:41,693][flwr][INFO] - Received initial parameters from one random client
+[2024-08-29 20:49:41,693][flwr][INFO] - Evaluating initial parameters
+[2024-08-29 20:49:41,693][flwr][INFO] - FL starting
+[2024-08-29 20:49:41,693][flwr][DEBUG] - fit_round 1: strategy sampled 3 clients (out of 3)
+[2024-08-29 20:49:41,922][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=337466, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 85, in fit
+    epochs = config("local_epochs")
+TypeError: 'dict' object is not callable
+[2024-08-29 20:49:42,486][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=337463, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 85, in fit
+    epochs = config("local_epochs")
+TypeError: 'dict' object is not callable
+[2024-08-29 20:49:42,525][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=337457, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 85, in fit
+    epochs = config("local_epochs")
+TypeError: 'dict' object is not callable
+[2024-08-29 20:49:42,525][flwr][DEBUG] - fit_round 1 received 0 results and 3 failures
+[2024-08-29 20:49:42,525][flwr][DEBUG] - evaluate_round 1: strategy sampled 3 clients (out of 3)
+[2024-08-29 20:49:42,991][flwr][DEBUG] - evaluate_round 1 received 3 results and 0 failures
+[2024-08-29 20:49:42,991][flwr][WARNING] - No evaluate_metrics_aggregation_fn provided
+[2024-08-29 20:49:42,991][flwr][DEBUG] - fit_round 2: strategy sampled 3 clients (out of 3)
+[2024-08-29 20:49:43,268][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=337457, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 85, in fit
+    epochs = config("local_epochs")
+TypeError: 'dict' object is not callable
+[2024-08-29 20:49:43,273][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=337463, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 85, in fit
+    epochs = config("local_epochs")
+TypeError: 'dict' object is not callable
+[2024-08-29 20:49:43,283][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=337466, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 85, in fit
+    epochs = config("local_epochs")
+TypeError: 'dict' object is not callable
+[2024-08-29 20:49:43,284][flwr][DEBUG] - fit_round 2 received 0 results and 3 failures
+[2024-08-29 20:49:43,284][flwr][DEBUG] - evaluate_round 2: strategy sampled 3 clients (out of 3)
+[2024-08-29 20:49:43,726][flwr][DEBUG] - evaluate_round 2 received 3 results and 0 failures
+[2024-08-29 20:49:43,726][flwr][DEBUG] - fit_round 3: strategy sampled 3 clients (out of 3)
+[2024-08-29 20:49:44,170][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=337457, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 85, in fit
+    epochs = config("local_epochs")
+TypeError: 'dict' object is not callable
+[2024-08-29 20:49:44,195][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=337463, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 85, in fit
+    epochs = config("local_epochs")
+TypeError: 'dict' object is not callable
+[2024-08-29 20:49:44,247][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=337466, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 85, in fit
+    epochs = config("local_epochs")
+TypeError: 'dict' object is not callable
+[2024-08-29 20:49:44,247][flwr][DEBUG] - fit_round 3 received 0 results and 3 failures
+[2024-08-29 20:49:44,248][flwr][DEBUG] - evaluate_round 3: strategy sampled 3 clients (out of 3)
+[2024-08-29 20:49:44,697][flwr][DEBUG] - evaluate_round 3 received 3 results and 0 failures
+[2024-08-29 20:49:44,698][flwr][DEBUG] - fit_round 4: strategy sampled 3 clients (out of 3)
+[2024-08-29 20:49:44,944][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=337466, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 85, in fit
+    epochs = config("local_epochs")
+TypeError: 'dict' object is not callable
+[2024-08-29 20:49:44,945][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=337463, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 85, in fit
+    epochs = config("local_epochs")
+TypeError: 'dict' object is not callable
+[2024-08-29 20:49:44,955][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=337457, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 85, in fit
+    epochs = config("local_epochs")
+TypeError: 'dict' object is not callable
+[2024-08-29 20:49:44,956][flwr][DEBUG] - fit_round 4 received 0 results and 3 failures
+[2024-08-29 20:49:44,956][flwr][DEBUG] - evaluate_round 4: strategy sampled 3 clients (out of 3)
+[2024-08-29 20:49:45,310][flwr][DEBUG] - evaluate_round 4 received 3 results and 0 failures
+[2024-08-29 20:49:45,311][flwr][DEBUG] - fit_round 5: strategy sampled 3 clients (out of 3)

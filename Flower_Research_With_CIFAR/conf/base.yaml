@@ -1,0 +1,18 @@
+---
+num_rounds: 10 # Número de rodadas de aprendizado federado
+num_clients: 50 # Número total de clientes disponíveis (também é o número de partições que precisamos criar)
+val_ratio: 0.1 # Proporção de dados para validação
+initial_rounds: 2
+num_clusters: 5
+batch_size: 32 # Tamanho do lote que os clientes usarão durante o treinamento
+num_classes: 10 # CIFAR-10 tem 10 classes, então isso permanece o mesmo
+num_clients_per_round_fit: 15 # Número de clientes envolvidos em cada rodada de treinamento
+num_clients_per_round_eval: 15 # Número de clientes envolvidos em cada rodada de avaliação
+config_fit: 
+  lr: 0.01 # Taxa de aprendizado dos clientes
+  momentum: 0.9 # Momentum utilizado pelo otimizador SGD no lado do cliente
+  local_epochs: 5 # Número de épocas que cada cliente treina durante uma rodada
+
+# Adicionando configuração relacionada à arquitetura e dataset
+input_channels: 3 # CIFAR-10 possui imagens RGB, então temos 3 canais
+image_size: 32 # O CIFAR-10 tem imagens de 32x32 pixels

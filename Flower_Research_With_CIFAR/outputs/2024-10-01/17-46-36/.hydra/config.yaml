@@ -1,0 +1,15 @@
+num_rounds: 10
+num_clients: 15
+val_ratio: 0.1
+initial_rounds: 2
+num_clusters: 5
+batch_size: 20
+num_classes: 10
+num_clients_per_round_fit: 10
+num_clients_per_round_eval: 25
+config_fit:
+  lr: 0.01
+  momentum: 0.9
+  local_epochs: 1
+input_channels: 3
+image_size: 32

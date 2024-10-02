@@ -1,0 +1,12 @@
+[2024-07-19 21:44:06,024][flwr][INFO] - Starting Flower simulation, config: ServerConfig(num_rounds=10, round_timeout=None)
+[2024-07-19 21:44:12,921][flwr][INFO] - Flower VCE: Ray initialized with resources: {'CPU': 12.0, 'object_store_memory': 4200178483.0, 'memory': 8400356967.0, 'node:10.0.0.182': 1.0}
+[2024-07-19 21:44:12,922][flwr][INFO] - Initializing global parameters
+[2024-07-19 21:44:12,922][flwr][INFO] - Requesting initial parameters from one random client
+[2024-07-19 21:44:14,345][flwr][ERROR] - [36mray::launch_and_get_parameters()[39m (pid=5243, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 135, in launch_and_get_parameters
+    client: Client = _create_client(client_fn, cid)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 168, in _create_client
+    client_like: ClientLike = client_fn(cid)
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research/client.py", line 97, in client_fn
+    return FlowerClient(
+AttributeError: 'FlowerClient' object has no attribute 'to_client'
