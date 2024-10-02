@@ -1,0 +1,275 @@
+[2024-09-01 13:55:08,328][flwr][INFO] - Starting Flower simulation, config: ServerConfig(num_rounds=10, round_timeout=None)
+[2024-09-01 13:55:10,653][flwr][INFO] - Flower VCE: Ray initialized with resources: {'CPU': 12.0, 'object_store_memory': 2819974348.0, 'memory': 5639948699.0, 'node:10.0.0.182': 1.0}
+[2024-09-01 13:55:10,654][flwr][INFO] - Initializing global parameters
+[2024-09-01 13:55:10,655][flwr][INFO] - Requesting initial parameters from one random client
+[2024-09-01 13:55:11,459][flwr][INFO] - Received initial parameters from one random client
+[2024-09-01 13:55:11,459][flwr][INFO] - Evaluating initial parameters
+[2024-09-01 13:55:11,459][flwr][INFO] - FL starting
+[2024-09-01 13:55:11,459][flwr][DEBUG] - fit_round 1: strategy sampled 1 clients (out of 1)
+[2024-09-01 13:55:11,748][flwr][DEBUG] - fit_round 1 received 1 results and 0 failures
+[2024-09-01 13:55:11,750][flwr][WARNING] - No fit_metrics_aggregation_fn provided
+[2024-09-01 13:55:11,750][flwr][DEBUG] - evaluate_round 1: strategy sampled 1 clients (out of 1)
+[2024-09-01 13:55:11,919][flwr][DEBUG] - evaluate_round 1 received 1 results and 0 failures
+[2024-09-01 13:55:11,919][flwr][WARNING] - No evaluate_metrics_aggregation_fn provided
+[2024-09-01 13:55:11,919][flwr][DEBUG] - fit_round 2: strategy sampled 1 clients (out of 1)
+[2024-09-01 13:55:12,127][flwr][DEBUG] - fit_round 2 received 1 results and 0 failures
+[2024-09-01 13:55:12,129][flwr][DEBUG] - evaluate_round 2: strategy sampled 1 clients (out of 1)
+[2024-09-01 13:55:12,283][flwr][DEBUG] - evaluate_round 2 received 1 results and 0 failures
+[2024-09-01 13:55:12,284][flwr][DEBUG] - fit_round 3: strategy sampled 1 clients (out of 1)
+[2024-09-01 13:55:12,570][flwr][DEBUG] - fit_round 3 received 1 results and 0 failures
+[2024-09-01 13:55:12,572][flwr][DEBUG] - evaluate_round 3: strategy sampled 1 clients (out of 1)
+[2024-09-01 13:55:12,702][flwr][DEBUG] - evaluate_round 3 received 1 results and 0 failures
+[2024-09-01 13:55:12,703][flwr][DEBUG] - fit_round 4: strategy sampled 1 clients (out of 1)
+[2024-09-01 13:55:12,921][flwr][DEBUG] - fit_round 4 received 1 results and 0 failures
+[2024-09-01 13:55:12,922][flwr][DEBUG] - evaluate_round 4: strategy sampled 1 clients (out of 1)
+[2024-09-01 13:55:13,091][flwr][DEBUG] - evaluate_round 4 received 1 results and 0 failures
+[2024-09-01 13:55:13,091][flwr][DEBUG] - fit_round 5: strategy sampled 1 clients (out of 1)
+[2024-09-01 13:55:13,319][flwr][DEBUG] - fit_round 5 received 1 results and 0 failures
+[2024-09-01 13:55:13,320][flwr][DEBUG] - evaluate_round 5: strategy sampled 1 clients (out of 1)
+[2024-09-01 13:55:13,498][flwr][DEBUG] - evaluate_round 5 received 1 results and 0 failures
+[2024-09-01 13:55:13,499][flwr][DEBUG] - fit_round 6: strategy sampled 1 clients (out of 1)
+[2024-09-01 13:55:13,747][flwr][DEBUG] - fit_round 6 received 1 results and 0 failures
+[2024-09-01 13:55:13,749][flwr][DEBUG] - evaluate_round 6: strategy sampled 1 clients (out of 1)
+[2024-09-01 13:55:13,911][flwr][DEBUG] - evaluate_round 6 received 1 results and 0 failures
+[2024-09-01 13:55:13,911][flwr][DEBUG] - fit_round 7: strategy sampled 1 clients (out of 1)
+[2024-09-01 13:55:14,129][flwr][DEBUG] - fit_round 7 received 1 results and 0 failures
+[2024-09-01 13:55:14,131][flwr][DEBUG] - evaluate_round 7: strategy sampled 1 clients (out of 1)
+[2024-09-01 13:55:14,295][flwr][DEBUG] - evaluate_round 7 received 1 results and 0 failures
+[2024-09-01 13:55:14,295][flwr][DEBUG] - fit_round 8: strategy sampled 1 clients (out of 1)
+[2024-09-01 13:55:14,507][flwr][DEBUG] - fit_round 8 received 1 results and 0 failures
+[2024-09-01 13:55:14,509][flwr][DEBUG] - evaluate_round 8: strategy sampled 1 clients (out of 1)
+[2024-09-01 13:55:14,681][flwr][DEBUG] - evaluate_round 8 received 1 results and 0 failures
+[2024-09-01 13:55:14,682][flwr][DEBUG] - fit_round 9: strategy sampled 1 clients (out of 1)
+[2024-09-01 13:55:14,880][flwr][DEBUG] - fit_round 9 received 1 results and 0 failures
+[2024-09-01 13:55:14,883][flwr][DEBUG] - evaluate_round 9: strategy sampled 1 clients (out of 1)
+[2024-09-01 13:55:15,008][flwr][DEBUG] - evaluate_round 9 received 1 results and 0 failures
+[2024-09-01 13:55:15,008][flwr][DEBUG] - fit_round 10: strategy sampled 1 clients (out of 1)
+[2024-09-01 13:55:15,222][flwr][DEBUG] - fit_round 10 received 1 results and 0 failures
+[2024-09-01 13:55:15,224][flwr][DEBUG] - evaluate_round 10: strategy sampled 1 clients (out of 1)
+[2024-09-01 13:55:15,368][flwr][DEBUG] - evaluate_round 10 received 1 results and 0 failures
+[2024-09-01 13:55:15,369][flwr][INFO] - FL finished in 3.9092223579937126
+[2024-09-01 13:55:15,369][flwr][INFO] - app_fit: losses_distributed [(1, 6.693752765655518), (2, 4.199830651283264), (3, 2.6209126114845276), (4, 2.2387812733650208), (5, 1.8401914238929749), (6, 1.739432692527771), (7, 1.2434205412864685), (8, 1.2307495176792145), (9, 1.00441113114357), (10, 1.1345067769289017)]
+[2024-09-01 13:55:15,369][flwr][INFO] - app_fit: metrics_distributed_fit {}
+[2024-09-01 13:55:15,369][flwr][INFO] - app_fit: metrics_distributed {}
+[2024-09-01 13:55:15,369][flwr][INFO] - app_fit: losses_centralized []
+[2024-09-01 13:55:15,369][flwr][INFO] - app_fit: metrics_centralized {}
+[2024-09-01 13:55:15,412][flwr][INFO] - Starting Flower simulation, config: ServerConfig(num_rounds=10, round_timeout=None)
+[2024-09-01 13:55:19,832][flwr][INFO] - Flower VCE: Ray initialized with resources: {'object_store_memory': 2831375155.0, 'node:10.0.0.182': 1.0, 'CPU': 12.0, 'memory': 5662750311.0}
+[2024-09-01 13:55:19,833][flwr][INFO] - Initializing global parameters
+[2024-09-01 13:55:19,833][flwr][INFO] - Requesting initial parameters from one random client
+[2024-09-01 13:55:20,679][flwr][INFO] - Received initial parameters from one random client
+[2024-09-01 13:55:20,679][flwr][INFO] - Evaluating initial parameters
+[2024-09-01 13:55:20,679][flwr][INFO] - FL starting
+[2024-09-01 13:55:20,679][flwr][DEBUG] - fit_round 1: strategy sampled 11 clients (out of 11)
+[2024-09-01 13:55:23,313][flwr][DEBUG] - fit_round 1 received 11 results and 0 failures
+[2024-09-01 13:55:23,325][flwr][WARNING] - No fit_metrics_aggregation_fn provided
+[2024-09-01 13:55:23,325][flwr][DEBUG] - evaluate_round 1: strategy sampled 11 clients (out of 11)
+[2024-09-01 13:55:24,649][flwr][DEBUG] - evaluate_round 1 received 11 results and 0 failures
+[2024-09-01 13:55:24,650][flwr][WARNING] - No evaluate_metrics_aggregation_fn provided
+[2024-09-01 13:55:24,650][flwr][DEBUG] - fit_round 2: strategy sampled 11 clients (out of 11)
+[2024-09-01 13:55:26,265][flwr][DEBUG] - fit_round 2 received 11 results and 0 failures
+[2024-09-01 13:55:26,278][flwr][DEBUG] - evaluate_round 2: strategy sampled 11 clients (out of 11)
+[2024-09-01 13:55:27,551][flwr][DEBUG] - evaluate_round 2 received 11 results and 0 failures
+[2024-09-01 13:55:27,552][flwr][DEBUG] - fit_round 3: strategy sampled 11 clients (out of 11)
+[2024-09-01 13:55:29,096][flwr][DEBUG] - fit_round 3 received 11 results and 0 failures
+[2024-09-01 13:55:29,121][flwr][DEBUG] - evaluate_round 3: strategy sampled 11 clients (out of 11)
+[2024-09-01 13:55:30,301][flwr][DEBUG] - evaluate_round 3 received 11 results and 0 failures
+[2024-09-01 13:55:30,301][flwr][DEBUG] - fit_round 4: strategy sampled 11 clients (out of 11)
+[2024-09-01 13:55:31,825][flwr][DEBUG] - fit_round 4 received 11 results and 0 failures
+[2024-09-01 13:55:31,851][flwr][DEBUG] - evaluate_round 4: strategy sampled 11 clients (out of 11)
+[2024-09-01 13:55:33,151][flwr][DEBUG] - evaluate_round 4 received 11 results and 0 failures
+[2024-09-01 13:55:33,152][flwr][DEBUG] - fit_round 5: strategy sampled 11 clients (out of 11)
+[2024-09-01 13:55:34,716][flwr][DEBUG] - fit_round 5 received 11 results and 0 failures
+[2024-09-01 13:55:34,733][flwr][DEBUG] - evaluate_round 5: strategy sampled 11 clients (out of 11)
+[2024-09-01 13:55:36,003][flwr][DEBUG] - evaluate_round 5 received 11 results and 0 failures
+[2024-09-01 13:55:36,004][flwr][DEBUG] - fit_round 6: strategy sampled 11 clients (out of 11)
+[2024-09-01 13:55:37,511][flwr][DEBUG] - fit_round 6 received 11 results and 0 failures
+[2024-09-01 13:55:37,522][flwr][DEBUG] - evaluate_round 6: strategy sampled 11 clients (out of 11)
+[2024-09-01 13:55:38,698][flwr][DEBUG] - evaluate_round 6 received 11 results and 0 failures
+[2024-09-01 13:55:38,699][flwr][DEBUG] - fit_round 7: strategy sampled 11 clients (out of 11)
+[2024-09-01 13:55:40,215][flwr][DEBUG] - fit_round 7 received 11 results and 0 failures
+[2024-09-01 13:55:40,226][flwr][DEBUG] - evaluate_round 7: strategy sampled 11 clients (out of 11)
+[2024-09-01 13:55:41,461][flwr][DEBUG] - evaluate_round 7 received 11 results and 0 failures
+[2024-09-01 13:55:41,461][flwr][DEBUG] - fit_round 8: strategy sampled 11 clients (out of 11)
+[2024-09-01 13:55:42,888][flwr][DEBUG] - fit_round 8 received 11 results and 0 failures
+[2024-09-01 13:55:42,903][flwr][DEBUG] - evaluate_round 8: strategy sampled 11 clients (out of 11)
+[2024-09-01 13:55:44,082][flwr][DEBUG] - evaluate_round 8 received 11 results and 0 failures
+[2024-09-01 13:55:44,083][flwr][DEBUG] - fit_round 9: strategy sampled 11 clients (out of 11)
+[2024-09-01 13:55:45,612][flwr][DEBUG] - fit_round 9 received 11 results and 0 failures
+[2024-09-01 13:55:45,631][flwr][DEBUG] - evaluate_round 9: strategy sampled 11 clients (out of 11)
+[2024-09-01 13:55:46,850][flwr][DEBUG] - evaluate_round 9 received 11 results and 0 failures
+[2024-09-01 13:55:46,851][flwr][DEBUG] - fit_round 10: strategy sampled 11 clients (out of 11)
+[2024-09-01 13:55:48,303][flwr][DEBUG] - fit_round 10 received 11 results and 0 failures
+[2024-09-01 13:55:48,325][flwr][DEBUG] - evaluate_round 10: strategy sampled 11 clients (out of 11)
+[2024-09-01 13:55:49,387][flwr][DEBUG] - evaluate_round 10 received 11 results and 0 failures
+[2024-09-01 13:55:49,387][flwr][INFO] - FL finished in 28.708312029004446
+[2024-09-01 13:55:49,387][flwr][INFO] - app_fit: losses_distributed [(1, 6.779835961081765), (2, 5.499816417694092), (3, 2.3153250867670234), (4, 1.7053266926245256), (5, 1.1810612163760446), (6, 0.8934940052303401), (7, 0.82322548431429), (8, 0.7379168316044591), (9, 0.6526962080123749), (10, 0.6196694084527817)]
+[2024-09-01 13:55:49,387][flwr][INFO] - app_fit: metrics_distributed_fit {}
+[2024-09-01 13:55:49,388][flwr][INFO] - app_fit: metrics_distributed {}
+[2024-09-01 13:55:49,388][flwr][INFO] - app_fit: losses_centralized []
+[2024-09-01 13:55:49,388][flwr][INFO] - app_fit: metrics_centralized {}
+[2024-09-01 13:55:49,453][flwr][INFO] - Starting Flower simulation, config: ServerConfig(num_rounds=10, round_timeout=None)
+[2024-09-01 13:55:53,867][flwr][INFO] - Flower VCE: Ray initialized with resources: {'memory': 5742526464.0, 'node:10.0.0.182': 1.0, 'object_store_memory': 2871263232.0, 'CPU': 12.0}
+[2024-09-01 13:55:53,870][flwr][INFO] - Initializing global parameters
+[2024-09-01 13:55:53,870][flwr][INFO] - Requesting initial parameters from one random client
+[2024-09-01 13:55:54,731][flwr][INFO] - Received initial parameters from one random client
+[2024-09-01 13:55:54,731][flwr][INFO] - Evaluating initial parameters
+[2024-09-01 13:55:54,731][flwr][INFO] - FL starting
+[2024-09-01 13:55:54,731][flwr][DEBUG] - fit_round 1: strategy sampled 60 clients (out of 60)
+[2024-09-01 13:56:01,463][flwr][DEBUG] - fit_round 1 received 60 results and 0 failures
+[2024-09-01 13:56:01,540][flwr][WARNING] - No fit_metrics_aggregation_fn provided
+[2024-09-01 13:56:01,541][flwr][DEBUG] - evaluate_round 1: strategy sampled 60 clients (out of 60)
+[2024-09-01 13:56:06,608][flwr][DEBUG] - evaluate_round 1 received 60 results and 0 failures
+[2024-09-01 13:56:06,608][flwr][WARNING] - No evaluate_metrics_aggregation_fn provided
+[2024-09-01 13:56:06,609][flwr][DEBUG] - fit_round 2: strategy sampled 60 clients (out of 60)
+[2024-09-01 13:56:12,716][flwr][DEBUG] - fit_round 2 received 60 results and 0 failures
+[2024-09-01 13:56:12,810][flwr][DEBUG] - evaluate_round 2: strategy sampled 60 clients (out of 60)
+[2024-09-01 13:56:17,851][flwr][DEBUG] - evaluate_round 2 received 60 results and 0 failures
+[2024-09-01 13:56:17,853][flwr][DEBUG] - fit_round 3: strategy sampled 60 clients (out of 60)
+[2024-09-01 13:56:24,135][flwr][DEBUG] - fit_round 3 received 60 results and 0 failures
+[2024-09-01 13:56:24,199][flwr][DEBUG] - evaluate_round 3: strategy sampled 60 clients (out of 60)
+[2024-09-01 13:56:29,120][flwr][DEBUG] - evaluate_round 3 received 60 results and 0 failures
+[2024-09-01 13:56:29,122][flwr][DEBUG] - fit_round 4: strategy sampled 60 clients (out of 60)
+[2024-09-01 13:56:35,500][flwr][DEBUG] - fit_round 4 received 60 results and 0 failures
+[2024-09-01 13:56:35,554][flwr][DEBUG] - evaluate_round 4: strategy sampled 60 clients (out of 60)
+[2024-09-01 13:56:40,789][flwr][DEBUG] - evaluate_round 4 received 60 results and 0 failures
+[2024-09-01 13:56:40,789][flwr][DEBUG] - fit_round 5: strategy sampled 60 clients (out of 60)
+[2024-09-01 13:56:46,835][flwr][DEBUG] - fit_round 5 received 60 results and 0 failures
+[2024-09-01 13:56:46,914][flwr][DEBUG] - evaluate_round 5: strategy sampled 60 clients (out of 60)
+[2024-09-01 13:56:51,760][flwr][DEBUG] - evaluate_round 5 received 60 results and 0 failures
+[2024-09-01 13:56:51,763][flwr][DEBUG] - fit_round 6: strategy sampled 60 clients (out of 60)
+[2024-09-01 13:56:57,994][flwr][DEBUG] - fit_round 6 received 60 results and 0 failures
+[2024-09-01 13:56:58,114][flwr][DEBUG] - evaluate_round 6: strategy sampled 60 clients (out of 60)
+[2024-09-01 13:57:03,099][flwr][DEBUG] - evaluate_round 6 received 60 results and 0 failures
+[2024-09-01 13:57:03,101][flwr][DEBUG] - fit_round 7: strategy sampled 60 clients (out of 60)
+[2024-09-01 13:57:09,157][flwr][DEBUG] - fit_round 7 received 60 results and 0 failures
+[2024-09-01 13:57:09,280][flwr][DEBUG] - evaluate_round 7: strategy sampled 60 clients (out of 60)
+[2024-09-01 13:57:14,426][flwr][DEBUG] - evaluate_round 7 received 60 results and 0 failures
+[2024-09-01 13:57:14,427][flwr][DEBUG] - fit_round 8: strategy sampled 60 clients (out of 60)
+[2024-09-01 13:57:20,607][flwr][DEBUG] - fit_round 8 received 60 results and 0 failures
+[2024-09-01 13:57:20,678][flwr][DEBUG] - evaluate_round 8: strategy sampled 60 clients (out of 60)
+[2024-09-01 13:57:25,645][flwr][DEBUG] - evaluate_round 8 received 60 results and 0 failures
+[2024-09-01 13:57:25,645][flwr][DEBUG] - fit_round 9: strategy sampled 60 clients (out of 60)
+[2024-09-01 13:57:31,649][flwr][DEBUG] - fit_round 9 received 60 results and 0 failures
+[2024-09-01 13:57:31,707][flwr][DEBUG] - evaluate_round 9: strategy sampled 60 clients (out of 60)
+[2024-09-01 13:57:36,780][flwr][DEBUG] - evaluate_round 9 received 60 results and 0 failures
+[2024-09-01 13:57:36,782][flwr][DEBUG] - fit_round 10: strategy sampled 60 clients (out of 60)
+[2024-09-01 13:57:42,872][flwr][DEBUG] - fit_round 10 received 60 results and 0 failures
+[2024-09-01 13:57:42,952][flwr][DEBUG] - evaluate_round 10: strategy sampled 60 clients (out of 60)
+[2024-09-01 13:57:47,972][flwr][DEBUG] - evaluate_round 10 received 60 results and 0 failures
+[2024-09-01 13:57:47,974][flwr][INFO] - FL finished in 113.24328482300916
+[2024-09-01 13:57:47,975][flwr][INFO] - app_fit: losses_distributed [(1, 6.722086262702942), (2, 5.157837780316671), (3, 2.6013761763771375), (4, 1.8519354956845442), (5, 1.3389659836888312), (6, 0.9908861111228665), (7, 0.7391817290956776), (8, 0.6696682166618605), (9, 0.5853456255048514), (10, 0.5370568342506885)]
+[2024-09-01 13:57:47,975][flwr][INFO] - app_fit: metrics_distributed_fit {}
+[2024-09-01 13:57:47,975][flwr][INFO] - app_fit: metrics_distributed {}
+[2024-09-01 13:57:47,975][flwr][INFO] - app_fit: losses_centralized []
+[2024-09-01 13:57:47,975][flwr][INFO] - app_fit: metrics_centralized {}
+[2024-09-01 13:57:47,989][flwr][INFO] - Starting Flower simulation, config: ServerConfig(num_rounds=10, round_timeout=None)
+[2024-09-01 13:57:52,567][flwr][INFO] - Flower VCE: Ray initialized with resources: {'node:10.0.0.182': 1.0, 'object_store_memory': 2900081049.0, 'memory': 5800162100.0, 'CPU': 12.0}
+[2024-09-01 13:57:52,570][flwr][INFO] - Initializing global parameters
+[2024-09-01 13:57:52,570][flwr][INFO] - Requesting initial parameters from one random client
+[2024-09-01 13:57:53,448][flwr][INFO] - Received initial parameters from one random client
+[2024-09-01 13:57:53,448][flwr][INFO] - Evaluating initial parameters
+[2024-09-01 13:57:53,448][flwr][INFO] - FL starting
+[2024-09-01 13:57:53,448][flwr][DEBUG] - fit_round 1: strategy sampled 1 clients (out of 1)
+[2024-09-01 13:57:53,726][flwr][DEBUG] - fit_round 1 received 1 results and 0 failures
+[2024-09-01 13:57:53,729][flwr][WARNING] - No fit_metrics_aggregation_fn provided
+[2024-09-01 13:57:53,729][flwr][DEBUG] - evaluate_round 1: strategy sampled 1 clients (out of 1)
+[2024-09-01 13:57:53,937][flwr][DEBUG] - evaluate_round 1 received 1 results and 0 failures
+[2024-09-01 13:57:53,937][flwr][WARNING] - No evaluate_metrics_aggregation_fn provided
+[2024-09-01 13:57:53,937][flwr][DEBUG] - fit_round 2: strategy sampled 1 clients (out of 1)
+[2024-09-01 13:57:54,157][flwr][DEBUG] - fit_round 2 received 1 results and 0 failures
+[2024-09-01 13:57:54,160][flwr][DEBUG] - evaluate_round 2: strategy sampled 1 clients (out of 1)
+[2024-09-01 13:57:54,304][flwr][DEBUG] - evaluate_round 2 received 1 results and 0 failures
+[2024-09-01 13:57:54,304][flwr][DEBUG] - fit_round 3: strategy sampled 1 clients (out of 1)
+[2024-09-01 13:57:54,567][flwr][DEBUG] - fit_round 3 received 1 results and 0 failures
+[2024-09-01 13:57:54,569][flwr][DEBUG] - evaluate_round 3: strategy sampled 1 clients (out of 1)
+[2024-09-01 13:57:54,745][flwr][DEBUG] - evaluate_round 3 received 1 results and 0 failures
+[2024-09-01 13:57:54,745][flwr][DEBUG] - fit_round 4: strategy sampled 1 clients (out of 1)
+[2024-09-01 13:57:55,016][flwr][DEBUG] - fit_round 4 received 1 results and 0 failures
+[2024-09-01 13:57:55,019][flwr][DEBUG] - evaluate_round 4: strategy sampled 1 clients (out of 1)
+[2024-09-01 13:57:55,201][flwr][DEBUG] - evaluate_round 4 received 1 results and 0 failures
+[2024-09-01 13:57:55,201][flwr][DEBUG] - fit_round 5: strategy sampled 1 clients (out of 1)
+[2024-09-01 13:57:55,410][flwr][DEBUG] - fit_round 5 received 1 results and 0 failures
+[2024-09-01 13:57:55,413][flwr][DEBUG] - evaluate_round 5: strategy sampled 1 clients (out of 1)
+[2024-09-01 13:57:55,546][flwr][DEBUG] - evaluate_round 5 received 1 results and 0 failures
+[2024-09-01 13:57:55,547][flwr][DEBUG] - fit_round 6: strategy sampled 1 clients (out of 1)
+[2024-09-01 13:57:55,772][flwr][DEBUG] - fit_round 6 received 1 results and 0 failures
+[2024-09-01 13:57:55,775][flwr][DEBUG] - evaluate_round 6: strategy sampled 1 clients (out of 1)
+[2024-09-01 13:57:55,927][flwr][DEBUG] - evaluate_round 6 received 1 results and 0 failures
+[2024-09-01 13:57:55,927][flwr][DEBUG] - fit_round 7: strategy sampled 1 clients (out of 1)
+[2024-09-01 13:57:56,112][flwr][DEBUG] - fit_round 7 received 1 results and 0 failures
+[2024-09-01 13:57:56,114][flwr][DEBUG] - evaluate_round 7: strategy sampled 1 clients (out of 1)
+[2024-09-01 13:57:56,248][flwr][DEBUG] - evaluate_round 7 received 1 results and 0 failures
+[2024-09-01 13:57:56,248][flwr][DEBUG] - fit_round 8: strategy sampled 1 clients (out of 1)
+[2024-09-01 13:57:56,492][flwr][DEBUG] - fit_round 8 received 1 results and 0 failures
+[2024-09-01 13:57:56,494][flwr][DEBUG] - evaluate_round 8: strategy sampled 1 clients (out of 1)
+[2024-09-01 13:57:56,651][flwr][DEBUG] - evaluate_round 8 received 1 results and 0 failures
+[2024-09-01 13:57:56,651][flwr][DEBUG] - fit_round 9: strategy sampled 1 clients (out of 1)
+[2024-09-01 13:57:56,870][flwr][DEBUG] - fit_round 9 received 1 results and 0 failures
+[2024-09-01 13:57:56,872][flwr][DEBUG] - evaluate_round 9: strategy sampled 1 clients (out of 1)
+[2024-09-01 13:57:57,059][flwr][DEBUG] - evaluate_round 9 received 1 results and 0 failures
+[2024-09-01 13:57:57,059][flwr][DEBUG] - fit_round 10: strategy sampled 1 clients (out of 1)
+[2024-09-01 13:57:57,299][flwr][DEBUG] - fit_round 10 received 1 results and 0 failures
+[2024-09-01 13:57:57,302][flwr][DEBUG] - evaluate_round 10: strategy sampled 1 clients (out of 1)
+[2024-09-01 13:57:57,430][flwr][DEBUG] - evaluate_round 10 received 1 results and 0 failures
+[2024-09-01 13:57:57,431][flwr][INFO] - FL finished in 3.9825971859972924
+[2024-09-01 13:57:57,431][flwr][INFO] - app_fit: losses_distributed [(1, 6.8479883670806885), (2, 6.519271373748779), (3, 4.756367921829224), (4, 2.943660795688629), (5, 2.3979660272598267), (6, 2.5322930812835693), (7, 1.4850079119205475), (8, 1.5799671411514282), (9, 1.0532996952533722), (10, 1.5450669527053833)]
+[2024-09-01 13:57:57,431][flwr][INFO] - app_fit: metrics_distributed_fit {}
+[2024-09-01 13:57:57,431][flwr][INFO] - app_fit: metrics_distributed {}
+[2024-09-01 13:57:57,431][flwr][INFO] - app_fit: losses_centralized []
+[2024-09-01 13:57:57,431][flwr][INFO] - app_fit: metrics_centralized {}
+[2024-09-01 13:57:57,471][flwr][INFO] - Starting Flower simulation, config: ServerConfig(num_rounds=10, round_timeout=None)
+[2024-09-01 13:58:01,865][flwr][INFO] - Flower VCE: Ray initialized with resources: {'object_store_memory': 2900500070.0, 'CPU': 12.0, 'node:10.0.0.182': 1.0, 'memory': 5801000142.0}
+[2024-09-01 13:58:01,866][flwr][INFO] - Initializing global parameters
+[2024-09-01 13:58:01,867][flwr][INFO] - Requesting initial parameters from one random client
+[2024-09-01 13:58:02,664][flwr][INFO] - Received initial parameters from one random client
+[2024-09-01 13:58:02,664][flwr][INFO] - Evaluating initial parameters
+[2024-09-01 13:58:02,664][flwr][INFO] - FL starting
+[2024-09-01 13:58:02,664][flwr][DEBUG] - fit_round 1: strategy sampled 27 clients (out of 27)
+[2024-09-01 13:58:06,356][flwr][DEBUG] - fit_round 1 received 27 results and 0 failures
+[2024-09-01 13:58:06,410][flwr][WARNING] - No fit_metrics_aggregation_fn provided
+[2024-09-01 13:58:06,411][flwr][DEBUG] - evaluate_round 1: strategy sampled 27 clients (out of 27)
+[2024-09-01 13:58:09,056][flwr][DEBUG] - evaluate_round 1 received 27 results and 0 failures
+[2024-09-01 13:58:09,056][flwr][WARNING] - No evaluate_metrics_aggregation_fn provided
+[2024-09-01 13:58:09,056][flwr][DEBUG] - fit_round 2: strategy sampled 27 clients (out of 27)
+[2024-09-01 13:58:12,068][flwr][DEBUG] - fit_round 2 received 27 results and 0 failures
+[2024-09-01 13:58:12,123][flwr][DEBUG] - evaluate_round 2: strategy sampled 27 clients (out of 27)
+[2024-09-01 13:58:14,513][flwr][DEBUG] - evaluate_round 2 received 27 results and 0 failures
+[2024-09-01 13:58:14,513][flwr][DEBUG] - fit_round 3: strategy sampled 27 clients (out of 27)
+[2024-09-01 13:58:17,582][flwr][DEBUG] - fit_round 3 received 27 results and 0 failures
+[2024-09-01 13:58:17,611][flwr][DEBUG] - evaluate_round 3: strategy sampled 27 clients (out of 27)
+[2024-09-01 13:58:19,818][flwr][DEBUG] - evaluate_round 3 received 27 results and 0 failures
+[2024-09-01 13:58:19,818][flwr][DEBUG] - fit_round 4: strategy sampled 27 clients (out of 27)
+[2024-09-01 13:58:22,922][flwr][DEBUG] - fit_round 4 received 27 results and 0 failures
+[2024-09-01 13:58:22,948][flwr][DEBUG] - evaluate_round 4: strategy sampled 27 clients (out of 27)
+[2024-09-01 13:58:25,433][flwr][DEBUG] - evaluate_round 4 received 27 results and 0 failures
+[2024-09-01 13:58:25,433][flwr][DEBUG] - fit_round 5: strategy sampled 27 clients (out of 27)
+[2024-09-01 13:58:28,546][flwr][DEBUG] - fit_round 5 received 27 results and 0 failures
+[2024-09-01 13:58:28,600][flwr][DEBUG] - evaluate_round 5: strategy sampled 27 clients (out of 27)
+[2024-09-01 13:58:31,029][flwr][DEBUG] - evaluate_round 5 received 27 results and 0 failures
+[2024-09-01 13:58:31,029][flwr][DEBUG] - fit_round 6: strategy sampled 27 clients (out of 27)
+[2024-09-01 13:58:34,262][flwr][DEBUG] - fit_round 6 received 27 results and 0 failures
+[2024-09-01 13:58:34,290][flwr][DEBUG] - evaluate_round 6: strategy sampled 27 clients (out of 27)
+[2024-09-01 13:58:36,817][flwr][DEBUG] - evaluate_round 6 received 27 results and 0 failures
+[2024-09-01 13:58:36,817][flwr][DEBUG] - fit_round 7: strategy sampled 27 clients (out of 27)
+[2024-09-01 13:58:40,130][flwr][DEBUG] - fit_round 7 received 27 results and 0 failures
+[2024-09-01 13:58:40,184][flwr][DEBUG] - evaluate_round 7: strategy sampled 27 clients (out of 27)
+[2024-09-01 13:58:42,657][flwr][DEBUG] - evaluate_round 7 received 27 results and 0 failures
+[2024-09-01 13:58:42,657][flwr][DEBUG] - fit_round 8: strategy sampled 27 clients (out of 27)
+[2024-09-01 13:58:45,883][flwr][DEBUG] - fit_round 8 received 27 results and 0 failures
+[2024-09-01 13:58:45,934][flwr][DEBUG] - evaluate_round 8: strategy sampled 27 clients (out of 27)
+[2024-09-01 13:58:48,670][flwr][DEBUG] - evaluate_round 8 received 27 results and 0 failures
+[2024-09-01 13:58:48,670][flwr][DEBUG] - fit_round 9: strategy sampled 27 clients (out of 27)
+[2024-09-01 13:58:51,837][flwr][DEBUG] - fit_round 9 received 27 results and 0 failures
+[2024-09-01 13:58:51,886][flwr][DEBUG] - evaluate_round 9: strategy sampled 27 clients (out of 27)
+[2024-09-01 13:58:54,556][flwr][DEBUG] - evaluate_round 9 received 27 results and 0 failures
+[2024-09-01 13:58:54,557][flwr][DEBUG] - fit_round 10: strategy sampled 27 clients (out of 27)
+[2024-09-01 13:58:57,729][flwr][DEBUG] - fit_round 10 received 27 results and 0 failures
+[2024-09-01 13:58:57,825][flwr][DEBUG] - evaluate_round 10: strategy sampled 27 clients (out of 27)
+[2024-09-01 13:59:00,575][flwr][DEBUG] - evaluate_round 10 received 27 results and 0 failures
+[2024-09-01 13:59:00,575][flwr][INFO] - FL finished in 57.91146277199732
+[2024-09-01 13:59:00,576][flwr][INFO] - app_fit: losses_distributed [(1, 6.695189740922716), (2, 4.811390430838974), (3, 2.036085554847011), (4, 1.6102746885131907), (5, 1.16753160815548), (6, 0.9159636403675433), (7, 0.7679995726104136), (8, 0.6884408511773303), (9, 0.607668288362523), (10, 0.5536044358655259)]
+[2024-09-01 13:59:00,576][flwr][INFO] - app_fit: metrics_distributed_fit {}
+[2024-09-01 13:59:00,576][flwr][INFO] - app_fit: metrics_distributed {}
+[2024-09-01 13:59:00,576][flwr][INFO] - app_fit: losses_centralized []
+[2024-09-01 13:59:00,576][flwr][INFO] - app_fit: metrics_centralized {}

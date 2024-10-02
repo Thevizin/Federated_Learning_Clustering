@@ -1,0 +1,17 @@
+[2024-09-01 18:09:44,566][flwr][INFO] - Starting Flower simulation, config: ServerConfig(num_rounds=1, round_timeout=None)
+[2024-09-01 18:09:47,158][flwr][INFO] - Flower VCE: Ray initialized with resources: {'memory': 5414119835.0, 'node:10.0.0.182': 1.0, 'CPU': 12.0, 'object_store_memory': 2707059916.0}
+[2024-09-01 18:09:47,160][flwr][INFO] - Initializing global parameters
+[2024-09-01 18:09:47,161][flwr][INFO] - Requesting initial parameters from one random client
+[2024-09-01 18:09:47,978][flwr][INFO] - Received initial parameters from one random client
+[2024-09-01 18:09:47,978][flwr][INFO] - Evaluating initial parameters
+[2024-09-01 18:09:47,978][flwr][INFO] - FL starting
+[2024-09-01 18:09:47,978][flwr][DEBUG] - fit_round 1: strategy sampled 30 clients (out of 30)
+[2024-09-01 18:09:55,522][flwr][DEBUG] - fit_round 1 received 30 results and 0 failures
+[2024-09-01 18:09:55,561][flwr][WARNING] - No fit_metrics_aggregation_fn provided
+[2024-09-01 18:09:55,561][flwr][INFO] - evaluate_round 1: no clients selected, cancel
+[2024-09-01 18:09:55,561][flwr][INFO] - FL finished in 7.5833894629904535
+[2024-09-01 18:09:55,561][flwr][INFO] - app_fit: losses_distributed []
+[2024-09-01 18:09:55,562][flwr][INFO] - app_fit: metrics_distributed_fit {}
+[2024-09-01 18:09:55,562][flwr][INFO] - app_fit: metrics_distributed {}
+[2024-09-01 18:09:55,562][flwr][INFO] - app_fit: losses_centralized []
+[2024-09-01 18:09:55,562][flwr][INFO] - app_fit: metrics_centralized {}

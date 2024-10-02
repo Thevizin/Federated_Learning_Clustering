@@ -1,0 +1,130 @@
+
+import psutil
+from collections import OrderedDict
+from typing import Dict, Tuple
+from flwr.common import NDArrays, Scalar
+import torch
+import flwr as fl
+import numpy as np
+
+from model import Net, train, test
+
+class FlowerClient(fl.client.NumPyClient):
+    """Define a Flower Client."""
+
+    def __init__(self, trainloader, vallodaer, num_classes) -> None:
+        super().__init__()
+
+        # the dataloaders that point to the data associated to this client
+        self.trainloader = trainloader
+        self.valloader = vallodaer
+
+        # a model that is randomly initialised at first
+        self.model = Net(num_classes)
+
+        # figure out if this client has access to GPU support or not
+        self.device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+
+
+    def get_point(self) -> Tuple[float, float]:
+        cpu_usage = psutil.cpu_percent(interval=1)
+        memory_info = psutil.virtual_memory()
+        memory_usage = memory_info.percent
+        return cpu_usage, memory_usage
+
+    def get_weights(self) -> np.ndarray:
+        """Obtém e normaliza os pesos do cliente, retornando um vetor de pesos normalizados.
+
+        Args:
+            client (FlowerClient): O cliente do Flower.
+
+        Returns:
+            np.ndarray: Um vetor de pesos normalizados no intervalo [0, 1].
+        """
+        # Obtém os pesos do cliente
+        parameters = self.get_parameters({})
+        
+        # Concatena todos os pesos em um único vetor
+        all_weights = np.concatenate([w.flatten() for w in parameters])
+        
+        # Normaliza os pesos para o intervalo [0, 1]
+        min_val = np.min(all_weights)
+        max_val = np.max(all_weights)
+        
+        # Evita divisão por zero caso todos os pesos sejam iguais
+        if min_val == max_val:
+            return np.zeros_like(all_weights)
+        
+        normalized_weights = (all_weights - min_val) / (max_val - min_val)
+        
+        return normalized_weights
+
+        # Exemplo de uso
+        # client = FlowerClient(...)
+        # normalized_weights = get_weights(client)
+        # print(normalized_weights)
+
+    def set_parameters(self, parameters):
+        """Receive parameters and apply them to the local model."""
+        params_dict = zip(self.model.state_dict().keys(), parameters)
+
+        state_dict = OrderedDict({k: torch.Tensor(v) for k, v in params_dict})
+
+        self.model.load_state_dict(state_dict, strict=True)
+
+    def get_parameters(self, config: Dict[str, Scalar]):
+        """Extract model parameters and return them as a list of numpy arrays."""
+
+        return [val.cpu().numpy() for _, val in self.model.state_dict().items()]
+
+    def fit(self, parameters, config):
+        """Train model received by the server (parameters) using the data that belongs to this client. Then, send it back to the server."""
+
+        # copy parameters sent by the server into client's local model
+        self.set_parameters(parameters)
+
+        # fetch elements in the config sent by the server
+        lr = config.get("lr", 0.01)  # Use a default value of 0.01 if not provided
+        momentum = config.get("momentum", 0.9)  # Use a default value of 0.9 if not provided
+        epochs = config.get("local_epochs", 1)  # Use a default value of 1 if not provided
+
+        # a very standard looking optimiser
+        optim = torch.optim.SGD(self.model.parameters(), lr=lr, momentum=momentum)
+
+        # do local training
+        train(self.model, self.trainloader, optim, epochs, self.device)
+
+        # Return updated model parameters
+        return self.get_parameters({}), len(self.trainloader), {}
+
+
+
+    def evaluate(self, parameters: NDArrays, config: Dict[str, Scalar]):
+        self.set_parameters(parameters)
+
+        loss, accuracy = test(self.model, self.valloader, self.device)
+
+        return float(loss), len(self.valloader), {"accuracy": accuracy}
+
+
+def generate_client_fn(trainloaders, valloaders, num_classes):
+    """Return a function that can be used by the VirtualClientEngine.
+
+    to spawn a FlowerClient with client id `cid`.
+    """
+
+    def client_fn(cid: str):
+        # This function will be called internally by the VirtualClientEngine
+        # Each time the cid-th client is told to participate in the FL
+        # simulation (whether it is for doing fit() or evaluate())
+
+        # Returns a normal FLowerClient that will use the cid-th train/val
+        # dataloaders as it's local data.
+        return FlowerClient(
+            trainloader=trainloaders[int(cid)],
+            vallodaer=valloaders[int(cid)],
+            num_classes=num_classes,
+        )
+
+    # return the function to spawn client
+    return client_fn

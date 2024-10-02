@@ -1,0 +1,1173 @@
+[2024-08-29 14:20:12,333][flwr][INFO] - Starting Flower simulation, config: ServerConfig(num_rounds=10, round_timeout=None)
+[2024-08-29 14:20:15,013][flwr][INFO] - Flower VCE: Ray initialized with resources: {'node:10.0.0.182': 1.0, 'object_store_memory': 3359869747.0, 'memory': 6719739495.0, 'CPU': 12.0}
+[2024-08-29 14:20:15,017][flwr][INFO] - Initializing global parameters
+[2024-08-29 14:20:15,017][flwr][INFO] - Requesting initial parameters from one random client
+[2024-08-29 14:20:15,892][flwr][INFO] - Received initial parameters from one random client
+[2024-08-29 14:20:15,892][flwr][INFO] - Evaluating initial parameters
+[2024-08-29 14:20:15,892][flwr][INFO] - FL starting
+[2024-08-29 14:20:15,892][flwr][DEBUG] - fit_round 1: strategy sampled 5 clients (out of 5)
+[2024-08-29 14:20:16,234][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=246966, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:16,407][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=246966, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:17,068][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=246960, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:17,108][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=246967, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:17,119][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=246955, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:17,120][flwr][DEBUG] - fit_round 1 received 0 results and 5 failures
+[2024-08-29 14:20:17,120][flwr][DEBUG] - evaluate_round 1: strategy sampled 5 clients (out of 5)
+[2024-08-29 14:20:18,512][flwr][DEBUG] - evaluate_round 1 received 5 results and 0 failures
+[2024-08-29 14:20:18,513][flwr][WARNING] - No evaluate_metrics_aggregation_fn provided
+[2024-08-29 14:20:18,513][flwr][DEBUG] - fit_round 2: strategy sampled 5 clients (out of 5)
+[2024-08-29 14:20:19,070][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=246963, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:19,078][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=246955, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:19,080][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=246966, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:19,097][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=246967, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:19,103][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=246960, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:19,104][flwr][DEBUG] - fit_round 2 received 0 results and 5 failures
+[2024-08-29 14:20:19,104][flwr][DEBUG] - evaluate_round 2: strategy sampled 5 clients (out of 5)
+[2024-08-29 14:20:19,704][flwr][DEBUG] - evaluate_round 2 received 5 results and 0 failures
+[2024-08-29 14:20:19,704][flwr][DEBUG] - fit_round 3: strategy sampled 5 clients (out of 5)
+[2024-08-29 14:20:19,992][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=246955, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:20,026][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=246967, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:20,042][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=246966, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:20,047][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=246960, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:20,058][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=246963, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:20,058][flwr][DEBUG] - fit_round 3 received 0 results and 5 failures
+[2024-08-29 14:20:20,058][flwr][DEBUG] - evaluate_round 3: strategy sampled 5 clients (out of 5)
+[2024-08-29 14:20:20,749][flwr][DEBUG] - evaluate_round 3 received 5 results and 0 failures
+[2024-08-29 14:20:20,749][flwr][DEBUG] - fit_round 4: strategy sampled 5 clients (out of 5)
+[2024-08-29 14:20:21,100][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=246955, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:21,174][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=246955, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:21,183][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=246967, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:21,200][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=246960, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:21,204][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=246966, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:21,205][flwr][DEBUG] - fit_round 4 received 0 results and 5 failures
+[2024-08-29 14:20:21,205][flwr][DEBUG] - evaluate_round 4: strategy sampled 5 clients (out of 5)
+[2024-08-29 14:20:21,733][flwr][DEBUG] - evaluate_round 4 received 5 results and 0 failures
+[2024-08-29 14:20:21,733][flwr][DEBUG] - fit_round 5: strategy sampled 5 clients (out of 5)
+[2024-08-29 14:20:22,103][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=246963, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:22,131][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=246966, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:22,135][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=246960, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:22,136][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=246955, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:22,142][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=246967, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:22,143][flwr][DEBUG] - fit_round 5 received 0 results and 5 failures
+[2024-08-29 14:20:22,143][flwr][DEBUG] - evaluate_round 5: strategy sampled 5 clients (out of 5)
+[2024-08-29 14:20:22,591][flwr][DEBUG] - evaluate_round 5 received 5 results and 0 failures
+[2024-08-29 14:20:22,591][flwr][DEBUG] - fit_round 6: strategy sampled 5 clients (out of 5)
+[2024-08-29 14:20:22,818][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=246966, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:22,910][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=246966, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:22,920][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=246960, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:22,941][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=246967, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:22,947][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=246955, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:22,948][flwr][DEBUG] - fit_round 6 received 0 results and 5 failures
+[2024-08-29 14:20:22,948][flwr][DEBUG] - evaluate_round 6: strategy sampled 5 clients (out of 5)
+[2024-08-29 14:20:23,512][flwr][DEBUG] - evaluate_round 6 received 5 results and 0 failures
+[2024-08-29 14:20:23,512][flwr][DEBUG] - fit_round 7: strategy sampled 5 clients (out of 5)
+[2024-08-29 14:20:23,818][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=246966, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:23,878][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=246966, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:23,880][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=246960, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:23,897][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=246967, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:23,899][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=246963, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:23,899][flwr][DEBUG] - fit_round 7 received 0 results and 5 failures
+[2024-08-29 14:20:23,900][flwr][DEBUG] - evaluate_round 7: strategy sampled 5 clients (out of 5)
+[2024-08-29 14:20:24,454][flwr][DEBUG] - evaluate_round 7 received 5 results and 0 failures
+[2024-08-29 14:20:24,454][flwr][DEBUG] - fit_round 8: strategy sampled 5 clients (out of 5)
+[2024-08-29 14:20:24,865][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=246955, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:24,872][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=246960, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:24,887][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=246966, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:24,911][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=246963, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:24,921][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=246967, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:24,922][flwr][DEBUG] - fit_round 8 received 0 results and 5 failures
+[2024-08-29 14:20:24,922][flwr][DEBUG] - evaluate_round 8: strategy sampled 5 clients (out of 5)
+[2024-08-29 14:20:25,512][flwr][DEBUG] - evaluate_round 8 received 5 results and 0 failures
+[2024-08-29 14:20:25,512][flwr][DEBUG] - fit_round 9: strategy sampled 5 clients (out of 5)
+[2024-08-29 14:20:25,831][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=246955, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:25,916][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=246955, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:25,918][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=246966, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:25,948][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=246960, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:25,952][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=246963, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:25,953][flwr][DEBUG] - fit_round 9 received 0 results and 5 failures
+[2024-08-29 14:20:25,953][flwr][DEBUG] - evaluate_round 9: strategy sampled 5 clients (out of 5)
+[2024-08-29 14:20:26,459][flwr][DEBUG] - evaluate_round 9 received 5 results and 0 failures
+[2024-08-29 14:20:26,459][flwr][DEBUG] - fit_round 10: strategy sampled 5 clients (out of 5)
+[2024-08-29 14:20:26,862][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=246966, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:26,870][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=246963, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:26,876][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=246960, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:26,886][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=246955, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:26,888][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=246967, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:26,889][flwr][DEBUG] - fit_round 10 received 0 results and 5 failures
+[2024-08-29 14:20:26,889][flwr][DEBUG] - evaluate_round 10: strategy sampled 5 clients (out of 5)
+[2024-08-29 14:20:27,361][flwr][DEBUG] - evaluate_round 10 received 5 results and 0 failures
+[2024-08-29 14:20:27,361][flwr][INFO] - FL finished in 11.469093745999999
+[2024-08-29 14:20:27,361][flwr][INFO] - app_fit: losses_distributed [(1, 6.8943737030029295), (2, 6.8943737030029295), (3, 6.8943737030029295), (4, 6.8943737030029295), (5, 6.8943737030029295), (6, 6.8943737030029295), (7, 6.8943737030029295), (8, 6.8943737030029295), (9, 6.8943737030029295), (10, 6.8943737030029295)]
+[2024-08-29 14:20:27,361][flwr][INFO] - app_fit: metrics_distributed_fit {}
+[2024-08-29 14:20:27,361][flwr][INFO] - app_fit: metrics_distributed {}
+[2024-08-29 14:20:27,362][flwr][INFO] - app_fit: losses_centralized []
+[2024-08-29 14:20:27,362][flwr][INFO] - app_fit: metrics_centralized {}
+[2024-08-29 14:20:27,410][flwr][INFO] - Starting Flower simulation, config: ServerConfig(num_rounds=10, round_timeout=None)
+[2024-08-29 14:20:32,184][flwr][INFO] - Flower VCE: Ray initialized with resources: {'object_store_memory': 3403662950.0, 'node:10.0.0.182': 1.0, 'CPU': 12.0, 'memory': 6807325902.0}
+[2024-08-29 14:20:32,188][flwr][INFO] - Initializing global parameters
+[2024-08-29 14:20:32,188][flwr][INFO] - Requesting initial parameters from one random client
+[2024-08-29 14:20:33,064][flwr][INFO] - Received initial parameters from one random client
+[2024-08-29 14:20:33,064][flwr][INFO] - Evaluating initial parameters
+[2024-08-29 14:20:33,064][flwr][INFO] - FL starting
+[2024-08-29 14:20:33,064][flwr][DEBUG] - fit_round 1: strategy sampled 20 clients (out of 20)
+[2024-08-29 14:20:33,929][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=249366, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:33,939][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=249366, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:34,165][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=249366, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:34,410][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=249366, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:34,600][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=249366, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:34,674][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=249366, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:35,073][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=249366, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:35,091][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=249366, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:35,122][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=249366, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:35,192][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=249366, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:35,235][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=249375, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:35,260][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=249366, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:35,321][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=249375, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:35,348][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=249366, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:35,429][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=249375, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:35,451][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=249366, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:35,511][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=249376, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:35,568][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=249372, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:36,006][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=249367, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:36,015][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=249377, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:36,016][flwr][DEBUG] - fit_round 1 received 0 results and 20 failures
+[2024-08-29 14:20:36,016][flwr][DEBUG] - evaluate_round 1: strategy sampled 20 clients (out of 20)
+[2024-08-29 14:20:38,069][flwr][DEBUG] - evaluate_round 1 received 20 results and 0 failures
+[2024-08-29 14:20:38,069][flwr][WARNING] - No evaluate_metrics_aggregation_fn provided
+[2024-08-29 14:20:38,072][flwr][DEBUG] - fit_round 2: strategy sampled 20 clients (out of 20)
+[2024-08-29 14:20:38,384][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=249366, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:38,544][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=249366, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:38,636][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=249377, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:38,689][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=249377, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:38,696][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=249366, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:38,841][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=249366, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:38,882][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=249366, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:38,915][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=249377, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:38,966][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=249366, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:38,992][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=249377, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:39,142][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=249366, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:39,142][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=249375, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:39,048][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=249377, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:39,177][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=249377, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:39,310][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=249375, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:39,390][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=249375, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:39,422][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=249367, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:39,428][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=249377, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:39,429][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=249366, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:39,468][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=249372, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:39,470][flwr][DEBUG] - fit_round 2 received 0 results and 20 failures
+[2024-08-29 14:20:39,470][flwr][DEBUG] - evaluate_round 2: strategy sampled 20 clients (out of 20)
+[2024-08-29 14:20:41,451][flwr][DEBUG] - evaluate_round 2 received 20 results and 0 failures
+[2024-08-29 14:20:41,451][flwr][DEBUG] - fit_round 3: strategy sampled 20 clients (out of 20)
+[2024-08-29 14:20:41,847][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=249376, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:41,900][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=249376, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:41,991][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=249376, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:42,189][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=249376, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:42,289][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=249376, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:42,290][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=249366, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:42,310][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=249367, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:42,392][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=249367, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:42,422][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=249372, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:42,442][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=249377, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:42,463][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=249376, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:42,464][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=249366, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:42,674][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=249377, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:43,130][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=249372, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:43,158][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=249377, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:43,169][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=249367, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:43,179][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=249366, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:43,185][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=249375, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:43,195][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=249376, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:43,211][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=249372, ip=10.0.0.182)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/viniciusfilg/miniconda3/envs/flower_tutorial/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/viniciusfilg/Documentos/Bolsa/Flower_Research6/client.py", line 89, in fit
+    lr = config["lr"]
+KeyError: 'lr'
+[2024-08-29 14:20:43,212][flwr][DEBUG] - fit_round 3 received 0 results and 20 failures
+[2024-08-29 14:20:43,213][flwr][DEBUG] - evaluate_round 3: strategy sampled 20 clients (out of 20)
