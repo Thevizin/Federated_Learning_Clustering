@@ -97,7 +97,6 @@ def initial_train(clients, cfg, num_rounds: int = 1):
     )
 
 def train_clusters(clients, server_client, num_rounds, cluster_id, all_results, testloader, cfg):
-    # Configure a estratégia do servidor local para o cluster
     strategy = get_cluster_strategy(clients, server_client, cfg, testloader)
     
     history = fl.simulation.start_simulation(
@@ -118,17 +117,16 @@ def main(cfg: DictConfig):
     print(OmegaConf.to_yaml(cfg))
     save_path = HydraConfig.get().runtime.output_dir
 
-    # Preparar datasets, agora para CIFAR-10
     trainloaders, validationloaders, testloader = prepare_dataset(
         num_partitions=cfg.num_clients, 
         batch_size=cfg.batch_size, 
         val_ratio=cfg.val_ratio,
     )
 
-    # Gerar a função de criação de clientes
+    # Gera a função de criação de clientes
     client_fn = generate_client_fn(trainloaders, validationloaders, cfg.num_classes)
     
-    # Criar e armazenar os clientes em uma lista
+    # Cria e armazena os clientes em uma lista:
     clients = [client_fn(str(cid)) for cid in range(cfg.num_clients)]
     clients_cpu_memory_array = {cid: [] for cid in range(cfg.num_clients)}  # Inicializar dicionário para armazenar os dados de CPU e memória
 
@@ -137,7 +135,7 @@ def main(cfg: DictConfig):
         cpu_memory = client.get_point()
         clients_cpu_memory_array[cid].append(cpu_memory)
 
-    # Realizar o treinamento inicial de todos os clientes
+    # Realiza o treinamento inicial de todos os clientes:
     initial_train(clients, cfg, num_rounds=cfg.initial_rounds)
 
     for cid in range(cfg.num_clients):
@@ -145,7 +143,7 @@ def main(cfg: DictConfig):
         cpu_memory = client.get_point()
         clients_cpu_memory_array[cid].append(cpu_memory)
 
-    # Obter os pesos dos clientes após o treinamento inicial
+    # Obtém os pesos dos clientes após o treinamento inicial
     client_weights = [client.get_weights() for client in clients]
 
     for cid in range(cfg.num_clients):
@@ -153,7 +151,7 @@ def main(cfg: DictConfig):
         cpu_memory = client.get_point()
         clients_cpu_memory_array[cid].append(cpu_memory)
 
-    # Criar clusters com base nos pesos dos clientes
+    # Cria clusters com base nos pesos dos clientes:
     clusters = create_clusters(client_weights, cfg.num_clusters)
 
     for cid in range(cfg.num_clients):
